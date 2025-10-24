@@ -1,18 +1,18 @@
 #create a ressource group
-az group create --name demo_community_tel_net --location eastus
+#az group create --name demo_community_tel_net --location eastus
 
 #create kubenetes cluster
-az aks create \
-    --resource-group myResourceGroup \
-    --name aksClusterTest \
-    --node-count 2 \
-    --generate-ssh-keys \
-    --attach-acr demo_community_tel_net
+#az aks create \
+ #   --resource-group myResourceGroup \
+  #  --name aksClusterTest \
+  #  --node-count 2 \
+  #  --generate-ssh-keys \
+  #  --attach-acr demo_community_tel_net
 
 
 #install aks cli
-az aks install-cli
+#az aks install-cli
 
 #Connect to cluster using kubectl
-az aks get-credentials --resource-group demo_community_tel_net --name aksClusterTest
+#az aks get-credentials --resource-group demo_community_tel_net --name aksClusterTest
 
